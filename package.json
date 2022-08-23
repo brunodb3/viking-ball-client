@@ -6,11 +6,11 @@
   "version": "0.0.1",
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "NODE_ENV=prod vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "prestart": "yarn build",
-    "start": "http-server ./dist",
-    "start:dev": "vite"
+    "start": "NODE_ENV=prod http-server ./dist",
+    "start:dev": "NODE_ENV=dev vite"
   },
   "devDependencies": {
     "@types/dat.gui": "^0.7.7",

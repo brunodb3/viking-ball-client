@@ -2,7 +2,7 @@
 
 A minigame to showcase the technology behind Northern Guilds.
 
-[![image.png](https://northernguilds.com/images/group.png)](https://northernguilds.com/images/group.png)
+[![viking-ball-logo-wip.png](https://i.postimg.cc/8zndGtx0/viking-ball-logo-wip.png)](https://postimg.cc/pmz5YYWf)
 
 ## Running the client
 

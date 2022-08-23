@@ -1,4 +1,5 @@
-const serverUrl = import.meta.env.VITE_SERVER_URL || "ws://localhost:8000";
+const serverUrl =
+  import.meta.env.VITE_SERVER_URL || "wss://viking-ball.herokuapp.com";
 
 export const environment = {
   serverUrl,

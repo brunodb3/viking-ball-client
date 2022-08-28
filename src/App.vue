@@ -10,7 +10,7 @@ export const network = new Network();
 export const pixiApp = new PIXI.Application({
   width: window.innerWidth,
   height: window.innerHeight,
-  backgroundColor: 0x46403b,
+  backgroundColor: 0x223038,
 });
 </script>
 
@@ -54,6 +54,8 @@ onMounted(() => {
     .add("viking_run_alt", "spritesheets/viking/jog2.png")
     .add("viking_kick", "spritesheets/viking/big-kick.png")
     .add("viking_tackle", "spritesheets/viking/tackle.png")
+    .add("new_field", "img/new_field.png")
+    .add("new_field_empty", "img/new_field_empty.png")
     .load(() => {
       const pixiDiv = document.getElementById("pixi") as HTMLDivElement;
       pixiDiv.appendChild(pixiApp.view);

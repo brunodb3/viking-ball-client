@@ -5,6 +5,7 @@ import { Field as FieldSchema } from "@schemas";
 import { texturesFromSpritesheet } from "@utils";
 
 export class Field extends Container {
+  public background: Sprite;
   public server: {
     debug: Debug;
     lastData?: FieldSchema;
@@ -16,6 +17,11 @@ export class Field extends Container {
     this.server = {
       debug: new Debug(),
     };
+
+    this.background = Sprite.from("new_field");
+    this.background.scale.set(2);
+    this.background.position.set(-800, -390);
+    this.addChild(this.background);
 
     // ? These IDs are based on "public/spritesheets/field.png" for each tile
     const map = [
@@ -45,7 +51,7 @@ export class Field extends Container {
           y * texture.height * scale
         );
 
-        this.addChild(sprite);
+        // this.addChild(sprite);
       }
     }
   }

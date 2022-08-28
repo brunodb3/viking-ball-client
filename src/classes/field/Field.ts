@@ -18,9 +18,9 @@ export class Field extends Container {
       debug: new Debug(),
     };
 
-    this.background = Sprite.from("new_field");
-    this.background.scale.set(2);
-    this.background.position.set(-800, -390);
+    this.background = Sprite.from("field_background");
+    this.background.scale.set(0.66);
+    this.background.position.set(-780, -380);
     this.addChild(this.background);
 
     // ? These IDs are based on "public/spritesheets/field.png" for each tile
